@@ -99,6 +99,24 @@
      object-fit: cover;
 }
 
+.App .single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .single .single_post {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+}
+
+.App .single .sidebar {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
 .App .home {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -67,6 +67,15 @@
         object-fit: cover;
        }
    }
+   .single {
+       display: flex;
+       .single_post {
+            flex: 9;
+       }
+       .sidebar {
+           flex: 3;
+       }
+   }
    .home {
        display: flex;
        margin-top: 20px;
