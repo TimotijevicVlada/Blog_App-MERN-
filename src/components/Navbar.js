@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -10,10 +11,18 @@ const Navbar = () => {
                 <i class="fab fa-pinterest-square"></i>
             </div>
             <div className="nav_center">
-                <span>HOME</span>
+                <span>
+                    <Link to="/">
+                        HOME
+                    </Link>  
+                </span>
                 <span>ABOUT</span>
                 <span>CONTACT</span>
-                <span>WRITE</span>
+                <span>
+                    <Link to="/single">
+                        WRITE
+                    </Link>
+                </span>
                 <span>LOGOUT</span>
             </div>
             <div className="nav_right">

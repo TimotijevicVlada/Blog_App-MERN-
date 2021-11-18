@@ -109,6 +109,55 @@
   -webkit-box-flex: 9;
       -ms-flex: 9;
           flex: 9;
+  padding: 20px;
+}
+
+.App .single .single_post .single_post_image img {
+  width: 100%;
+}
+
+.App .single .single_post .single_post_events {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.App .single .single_post .single_post_events i {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.App .single .single_post .single_post_events i:first-child {
+  color: teal;
+}
+
+.App .single .single_post .single_post_events i:last-child {
+  color: tomato;
+}
+
+.App .single .single_post .single_post_title {
+  text-align: center;
+}
+
+.App .single .single_post .single_post_author_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ceaf01;
+  margin: 10px 0px;
+}
+
+.App .single .single_post .single_post_text {
+  margin: 10px 0px;
+  text-indent: 20px;
 }
 
 .App .single .sidebar {

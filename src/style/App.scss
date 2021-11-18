@@ -71,6 +71,41 @@
        display: flex;
        .single_post {
             flex: 9;
+            padding: 20px;
+            .single_post_image {
+                img {
+                    width: 100%;
+                }
+            }
+            .single_post_events {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                i {
+                    font-size: 20px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    &:first-child {
+                        color: teal;
+                    }
+                    &:last-child {
+                        color: tomato;
+                    }
+                }
+            }
+            .single_post_title {
+                text-align: center;
+            }
+            .single_post_author_time {
+                display: flex;
+                justify-content: space-between;
+                color: rgb(206, 175, 1);
+                margin: 10px 0px;
+            }
+            .single_post_text {
+                margin: 10px 0px;
+                text-indent: 20px;
+            }
        }
        .sidebar {
            flex: 3;
