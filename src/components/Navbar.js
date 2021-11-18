@@ -12,18 +12,30 @@ const Navbar = () => {
             </div>
             <div className="nav_center">
                 <span>
-                    <Link to="/">
+                    <Link className="link" to="/">
                         HOME
                     </Link>  
                 </span>
-                <span>ABOUT</span>
-                <span>CONTACT</span>
                 <span>
-                    <Link to="/single">
+                    <Link className="link" to="/about">
+                        ABOUT
+                    </Link>
+                </span>
+                <span>
+                    <Link className="link" to="/contact">
+                        CONTACT
+                    </Link>
+                </span>
+                <span>
+                    <Link className="link" to="/single">
                         WRITE
                     </Link>
                 </span>
-                <span>LOGOUT</span>
+                <span>
+                    <Link className="link" to="/logout">
+                        LOGOUT
+                    </Link>
+                </span>
             </div>
             <div className="nav_right">
                 <img src="https://www.freeiconspng.com/uploads/person-icon-8.png" alt="person_img" />

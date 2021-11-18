@@ -6,7 +6,7 @@
 }
 
 .App {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .App .navbar {
@@ -45,6 +45,15 @@
   cursor: pointer;
 }
 
+.App .navbar .nav_center span .link {
+  text-decoration: none;
+  color: gray;
+}
+
+.App .navbar .nav_center span .link:hover {
+  text-decoration: underline;
+}
+
 .App .navbar .nav_right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,11 +73,15 @@
   cursor: pointer;
 }
 
-.App .header {
+.App .home {
+  margin-top: 20px;
+}
+
+.App .home .header {
   margin-top: 70px;
 }
 
-.App .header .header_titles {
+.App .home .header .header_titles {
   position: absolute;
   top: 10%;
   width: 100%;
@@ -82,21 +95,144 @@
   text-align: center;
 }
 
-.App .header .header_titles .title_small {
+.App .home .header .header_titles .title_small {
   font-size: 20px;
   color: lightgray;
 }
 
-.App .header .header_titles .title_big {
+.App .home .header .header_titles .title_big {
   font-size: 70px;
 }
 
-.App .header img {
+.App .home .header img {
   width: 100%;
   height: 600px;
   margin-top: 80px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.App .home .home_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .home .home_content .posts {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+}
+
+.App .home .home_content .posts .post {
+  width: 300px;
+  margin: 0px 25px 40px 25px;
+}
+
+.App .home .home_content .posts .post .post_img img {
+  width: 100%;
+}
+
+.App .home .home_content .posts .post .post_header {
+  color: gray;
+  text-align: center;
+  font-size: 14px;
+}
+
+.App .home .home_content .posts .post .post_header span {
+  margin-right: 10px;
+}
+
+.App .home .home_content .posts .post .post_title {
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.App .home .home_content .posts .post .post_time {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+  font-size: 12px;
+}
+
+.App .home .home_content .posts .post .post_text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.App .home .home_content .sidebar {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.App .home .home_content .sidebar .sidebar_title {
+  text-align: center;
+  padding: 5px 0px;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+}
+
+.App .home .home_content .sidebar .sidebar_img {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .home .home_content .sidebar .sidebar_img img {
+  width: 80%;
+}
+
+.App .home .home_content .sidebar .sidebar_text {
+  padding: 10px 0px;
+}
+
+.App .home .home_content .sidebar .sidebar_categories {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.App .home .home_content .sidebar .sidebar_categories div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .home .home_content .sidebar .sidebar_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px;
+}
+
+.App .home .home_content .sidebar .sidebar_social .fab {
+  margin-right: 10px;
+  font-size: 22px;
 }
 
 .App .single {
@@ -166,78 +302,14 @@
           flex: 3;
 }
 
-.App .home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-}
-
-.App .home .posts {
-  -webkit-box-flex: 9;
-      -ms-flex: 9;
-          flex: 9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 20px;
-}
-
-.App .home .posts .post {
-  width: 300px;
-  margin: 0px 25px 40px 25px;
-}
-
-.App .home .posts .post .post_img img {
-  width: 100%;
-}
-
-.App .home .posts .post .post_header {
-  color: gray;
-  text-align: center;
-  font-size: 14px;
-}
-
-.App .home .posts .post .post_header span {
-  margin-right: 10px;
-}
-
-.App .home .posts .post .post_title {
-  text-align: center;
-  margin: 5px 0px;
-}
-
-.App .home .posts .post .post_time {
-  text-align: center;
-  font-style: italic;
-  color: gray;
-  font-size: 12px;
-}
-
-.App .home .posts .post .post_text p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-}
-
-.App .home .sidebar {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
-}
-
-.App .home .sidebar .sidebar_title {
+.App .single .sidebar .sidebar_title {
   text-align: center;
   padding: 5px 0px;
   border-top: 2px solid lightgray;
   border-bottom: 2px solid lightgray;
 }
 
-.App .home .sidebar .sidebar_img {
+.App .single .sidebar .sidebar_img {
   padding: 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,15 +319,15 @@
           justify-content: center;
 }
 
-.App .home .sidebar .sidebar_img img {
+.App .single .sidebar .sidebar_img img {
   width: 80%;
 }
 
-.App .home .sidebar .sidebar_text {
+.App .single .sidebar .sidebar_text {
   padding: 10px 0px;
 }
 
-.App .home .sidebar .sidebar_categories {
+.App .single .sidebar .sidebar_categories {
   padding: 10px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,7 +337,7 @@
           justify-content: space-evenly;
 }
 
-.App .home .sidebar .sidebar_categories div {
+.App .single .sidebar .sidebar_categories div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +347,7 @@
           flex-direction: column;
 }
 
-.App .home .sidebar .sidebar_social {
+.App .single .sidebar .sidebar_social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +357,7 @@
   padding: 10px 0px;
 }
 
-.App .home .sidebar .sidebar_social .fab {
+.App .single .sidebar .sidebar_social .fab {
   margin-right: 10px;
   font-size: 22px;
 }
