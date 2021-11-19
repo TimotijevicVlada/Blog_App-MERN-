@@ -191,6 +191,18 @@
             margin-right: 10px;
             font-size: 22px;
           }
+          .fa-facebook-square {
+            color: #4267B2;
+          }
+          .fa-instagram-square {
+            color: #cd486b;
+          }
+          .fa-twitter-square {
+            color: #00acee;
+          }
+          .fa-pinterest-square {
+            color: #c8232c;
+          }
         }
       }
     }
@@ -201,6 +213,10 @@
       flex: 9;
       padding: 20px;
       .single_post_image {
+        height: 400px;
+        margin-top: 30px;
+        border-radius: 15px;
+        overflow: hidden;
         img {
           width: 100%;
         }
@@ -209,6 +225,7 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        padding: 5px 0px;
         i {
           font-size: 20px;
           margin-left: 10px;
@@ -270,6 +287,18 @@
         .fab {
           margin-right: 10px;
           font-size: 22px;
+        }
+        .fa-facebook-square {
+          color: #4267B2;
+        }
+        .fa-instagram-square {
+          color: #cd486b;
+        }
+        .fa-twitter-square {
+          color: #00acee;
+        }
+        .fa-pinterest-square {
+          color: #c8232c;
         }
       }
     }

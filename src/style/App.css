@@ -282,6 +282,22 @@
   font-size: 22px;
 }
 
+.App .home .home_content .sidebar .sidebar_social .fa-facebook-square {
+  color: #4267B2;
+}
+
+.App .home .home_content .sidebar .sidebar_social .fa-instagram-square {
+  color: #cd486b;
+}
+
+.App .home .home_content .sidebar .sidebar_social .fa-twitter-square {
+  color: #00acee;
+}
+
+.App .home .home_content .sidebar .sidebar_social .fa-pinterest-square {
+  color: #c8232c;
+}
+
 .App .single {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,6 +309,13 @@
       -ms-flex: 9;
           flex: 9;
   padding: 20px;
+}
+
+.App .single .single_post .single_post_image {
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .App .single .single_post .single_post_image img {
@@ -307,6 +330,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding: 5px 0px;
 }
 
 .App .single .single_post .single_post_events i {
@@ -407,6 +431,22 @@
 .App .single .sidebar .sidebar_social .fab {
   margin-right: 10px;
   font-size: 22px;
+}
+
+.App .single .sidebar .sidebar_social .fa-facebook-square {
+  color: #4267B2;
+}
+
+.App .single .sidebar .sidebar_social .fa-instagram-square {
+  color: #cd486b;
+}
+
+.App .single .sidebar .sidebar_social .fa-twitter-square {
+  color: #00acee;
+}
+
+.App .single .sidebar .sidebar_social .fa-pinterest-square {
+  color: #c8232c;
 }
 
 .App .write {
