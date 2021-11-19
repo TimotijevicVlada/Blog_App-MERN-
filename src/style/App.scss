@@ -28,11 +28,11 @@
         color: gray;
         cursor: pointer;
         .link {
-            text-decoration: none;
-            color: gray;
-            &:hover {
-                text-decoration: underline;
-            }
+          text-decoration: none;
+          color: gray;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -44,8 +44,23 @@
         margin-right: 12px;
       }
       .fas {
+        margin-left: 10px;
         font-size: 20px;
         cursor: pointer;
+      }
+      .nav_login_logout {
+        span {
+          margin: 0px 5px;
+          color: gray;
+          font-size: 18px;
+          .link {
+            color: gray;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
       }
     }
   }
@@ -200,42 +215,102 @@
       }
     }
     .sidebar {
-        flex: 3;
-        .sidebar_title {
-          text-align: center;
-          padding: 5px 0px;
-          border-top: 2px solid lightgray;
-          border-bottom: 2px solid lightgray;
+      flex: 3;
+      .sidebar_title {
+        text-align: center;
+        padding: 5px 0px;
+        border-top: 2px solid lightgray;
+        border-bottom: 2px solid lightgray;
+      }
+      .sidebar_img {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 80%;
         }
-        .sidebar_img {
-          padding: 10px 0px;
+      }
+      .sidebar_text {
+        padding: 10px 0px;
+      }
+      .sidebar_categories {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        div {
           display: flex;
-          justify-content: center;
-          img {
-            width: 80%;
+          flex-direction: column;
+        }
+      }
+      .sidebar_social {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        .fab {
+          margin-right: 10px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .login,
+  .register {
+    height: 100vh;
+    background: url(http://www.nordic.org.in/login/img/login-whisp.png)
+      no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login_form,
+    .register_form {
+      width: 400px;
+      height: 450px;
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 15px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .login_title,
+      .register_title {
+        text-align: center;
+        h2 {
+          font-weight: 200;
+        }
+      }
+      .login_inputs,
+      .register_inputs {
+        div {
+          input {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            margin: 7px 0px;
+            border-radius: 7px;
+            &:focus {
+              outline: none;
+            }
           }
-        }
-        .sidebar_text {
-          padding: 10px 0px;
-        }
-        .sidebar_categories {
-          padding: 10px 0px;
-          display: flex;
-          justify-content: space-evenly;
-          div {
-            display: flex;
-            flex-direction: column;
-          }
-        }
-        .sidebar_social {
-          display: flex;
-          justify-content: center;
-          padding: 10px 0px;
-          .fab {
-            margin-right: 10px;
-            font-size: 22px;
+          button {
+            width: 100%;
+            padding: 10px 0px;
+            font-size: 17px;
+            margin: 5px 0px;
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+            background-color: teal;
+            color: white;
+            &:hover {
+              background-color: rgb(33, 167, 167);
+            }
           }
         }
       }
+    }
   }
 }

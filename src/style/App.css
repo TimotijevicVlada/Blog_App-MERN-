@@ -69,8 +69,24 @@
 }
 
 .App .navbar .nav_right .fas {
+  margin-left: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.App .navbar .nav_right .nav_login_logout span {
+  margin: 0px 5px;
+  color: gray;
+  font-size: 18px;
+}
+
+.App .navbar .nav_right .nav_login_logout span .link {
+  color: gray;
+  text-decoration: none;
+}
+
+.App .navbar .nav_right .nav_login_logout span .link:hover {
+  text-decoration: underline;
 }
 
 .App .home {
@@ -360,5 +376,122 @@
 .App .single .sidebar .sidebar_social .fab {
   margin-right: 10px;
   font-size: 22px;
+}
+
+.App .login,
+.App .register {
+  height: 100vh;
+  background: url(http://www.nordic.org.in/login/img/login-whisp.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .login .login_form,
+.App .login .register_form,
+.App .register .login_form,
+.App .register .register_form {
+  width: 400px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.App .login .login_form .login_title,
+.App .login .login_form .register_title,
+.App .login .register_form .login_title,
+.App .login .register_form .register_title,
+.App .register .login_form .login_title,
+.App .register .login_form .register_title,
+.App .register .register_form .login_title,
+.App .register .register_form .register_title {
+  text-align: center;
+}
+
+.App .login .login_form .login_title h2,
+.App .login .login_form .register_title h2,
+.App .login .register_form .login_title h2,
+.App .login .register_form .register_title h2,
+.App .register .login_form .login_title h2,
+.App .register .login_form .register_title h2,
+.App .register .register_form .login_title h2,
+.App .register .register_form .register_title h2 {
+  font-weight: 200;
+}
+
+.App .login .login_form .login_inputs div input,
+.App .login .login_form .register_inputs div input,
+.App .login .register_form .login_inputs div input,
+.App .login .register_form .register_inputs div input,
+.App .register .login_form .login_inputs div input,
+.App .register .login_form .register_inputs div input,
+.App .register .register_form .login_inputs div input,
+.App .register .register_form .register_inputs div input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  margin: 7px 0px;
+  border-radius: 7px;
+}
+
+.App .login .login_form .login_inputs div input:focus,
+.App .login .login_form .register_inputs div input:focus,
+.App .login .register_form .login_inputs div input:focus,
+.App .login .register_form .register_inputs div input:focus,
+.App .register .login_form .login_inputs div input:focus,
+.App .register .login_form .register_inputs div input:focus,
+.App .register .register_form .login_inputs div input:focus,
+.App .register .register_form .register_inputs div input:focus {
+  outline: none;
+}
+
+.App .login .login_form .login_inputs div button,
+.App .login .login_form .register_inputs div button,
+.App .login .register_form .login_inputs div button,
+.App .login .register_form .register_inputs div button,
+.App .register .login_form .login_inputs div button,
+.App .register .login_form .register_inputs div button,
+.App .register .register_form .login_inputs div button,
+.App .register .register_form .register_inputs div button {
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 17px;
+  margin: 5px 0px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+}
+
+.App .login .login_form .login_inputs div button:hover,
+.App .login .login_form .register_inputs div button:hover,
+.App .login .register_form .login_inputs div button:hover,
+.App .login .register_form .register_inputs div button:hover,
+.App .register .login_form .login_inputs div button:hover,
+.App .register .login_form .register_inputs div button:hover,
+.App .register .register_form .login_inputs div button:hover,
+.App .register .register_form .register_inputs div button:hover {
+  background-color: #21a7a7;
 }
 /*# sourceMappingURL=App.css.map */
