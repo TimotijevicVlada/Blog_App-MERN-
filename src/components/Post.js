@@ -1,13 +1,16 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 const Post = () => {
   return (
     <div className="post">
       <div className="post_img">
-        <img
+        <Link to="/single">
+          <img
           src="https://travelwithkat.com/wp-content/uploads/2017/08/oak-alley-plantation.jpg"
           alt="post_image"
         />
+        </Link>
       </div>
       <div className="post_header">
         <span>Music</span>

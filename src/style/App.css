@@ -33,6 +33,23 @@
 
 .App .navbar .nav_social .fab {
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.App .navbar .nav_social .fa-facebook-square {
+  color: #4267B2;
+}
+
+.App .navbar .nav_social .fa-instagram-square {
+  color: #cd486b;
+}
+
+.App .navbar .nav_social .fa-twitter-square {
+  color: #00acee;
+}
+
+.App .navbar .nav_social .fa-pinterest-square {
+  color: #c8232c;
 }
 
 .App .navbar .nav_center {
@@ -151,8 +168,22 @@
   margin: 0px 25px 40px 25px;
 }
 
+.App .home .home_content .posts .post .post_img {
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-radius: 7px;
+}
+
 .App .home .home_content .posts .post .post_img img {
   width: 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.App .home .home_content .posts .post .post_img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .App .home .home_content .posts .post .post_header {
@@ -376,6 +407,119 @@
 .App .single .sidebar .sidebar_social .fab {
   margin-right: 10px;
   font-size: 22px;
+}
+
+.App .write {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .write .write_content {
+  width: 70%;
+}
+
+.App .write .write_content .write_image {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.App .write .write_content .write_image img {
+  width: 100%;
+}
+
+.App .write .write_content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .write .write_content form .write_events {
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+}
+
+.App .write .write_content form .write_events .write_content_title {
+  color: gray;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App .write .write_content form .write_events .write_content_title span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border: 2px solid teal;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.App .write .write_content form .write_events .write_content_title span i {
+  font-size: 22px;
+  color: teal;
+}
+
+.App .write .write_content form .write_events .write_content_title input {
+  width: 100%;
+  border: none;
+  font-size: 22px;
+}
+
+.App .write .write_content form .write_events .write_content_title input:focus {
+  outline: none;
+}
+
+.App .write .write_content form .write_events .write_content_story textarea {
+  width: 100%;
+  height: 300px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+.App .write .write_content form .write_events .write_content_story textarea:focus {
+  outline: none;
+}
+
+.App .write .write_content form .write_button {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 10px 0px;
+}
+
+.App .write .write_content form .write_button button {
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+
+.App .write .write_content form .write_button button:hover {
+  background-color: #289c9c;
 }
 
 .App .login,

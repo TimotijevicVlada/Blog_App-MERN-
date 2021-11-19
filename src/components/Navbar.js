@@ -30,15 +30,11 @@ const Navbar = () => {
           </Link>
         </span>
         <span>
-          <Link className="link" to="/single">
+          <Link className="link" to="/write">
             WRITE
           </Link>
         </span>
-        <span>
-          <Link className="link" to="/logout">
-            LOGOUT
-          </Link>
-        </span>
+        {user ? <span>LOGOUT</span> : ""}
       </div>
       <div className="nav_right">
         {user ? (
