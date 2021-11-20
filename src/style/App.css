@@ -760,6 +760,26 @@
   outline: none;
 }
 
+.App .settings .settings_content .settings_form .settings_submit {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.App .settings .settings_content .settings_form .settings_submit button {
+  background-color: teal;
+  color: white;
+  padding: 8px 12px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
 .App .settings .sidebar {
   -webkit-box-flex: 3;
       -ms-flex: 3;

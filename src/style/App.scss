@@ -501,6 +501,20 @@
             }
           }
         }
+        .settings_submit {
+          padding-right: 20px;
+          display: flex;
+          justify-content: flex-end;
+          button {
+            background-color: teal;
+            color: white;
+            padding: 8px 12px;
+            font-size: 18px;
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+          }
+        }
       }
     }
     .sidebar {

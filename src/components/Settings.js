@@ -40,6 +40,11 @@ const Settings = () => {
             <label>Password</label>
             <input type="password" placeholder="Password" name="password" />
           </div>
+          <div className="settings_submit">
+            <button className="settingsSubmitButton" type="submit">
+                Update
+            </button>
+          </div>
         </form>
       </div>
       <Sidebar />
