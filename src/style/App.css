@@ -37,7 +37,7 @@
 }
 
 .App .navbar .nav_social .fa-facebook-square {
-  color: #4267B2;
+  color: #4267b2;
 }
 
 .App .navbar .nav_social .fa-instagram-square {
@@ -283,7 +283,7 @@
 }
 
 .App .home .home_content .sidebar .sidebar_social .fa-facebook-square {
-  color: #4267B2;
+  color: #4267b2;
 }
 
 .App .home .home_content .sidebar .sidebar_social .fa-instagram-square {
@@ -434,7 +434,7 @@
 }
 
 .App .single .sidebar .sidebar_social .fa-facebook-square {
-  color: #4267B2;
+  color: #4267b2;
 }
 
 .App .single .sidebar .sidebar_social .fa-instagram-square {
@@ -677,5 +677,168 @@
 .App .register .register_form .login_inputs div button:hover,
 .App .register .register_form .register_inputs div button:hover {
   background-color: #21a7a7;
+}
+
+.App .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  padding: 0px 20px;
+}
+
+.App .settings .settings_content {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+}
+
+.App .settings .settings_content .settings_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px 10px 0px;
+  color: tomato;
+}
+
+.App .settings .settings_content .settings_title span {
+  cursor: pointer;
+}
+
+.App .settings .settings_content .settings_form .profile_picture_title h3 {
+  font-weight: 200;
+}
+
+.App .settings .settings_content .settings_form .settings_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+}
+
+.App .settings .settings_content .settings_form .settings_image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.App .settings .settings_content .settings_form .settings_image label i {
+  font-size: 25px;
+  background-color: crimson;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+}
+
+.App .settings .settings_content .settings_form .settings_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0px;
+  padding: 0px 20px 0px 0px;
+}
+
+.App .settings .settings_content .settings_form .settings_input input {
+  font-size: 18px;
+  padding: 20px 0px 3px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.App .settings .settings_content .settings_form .settings_input input:focus {
+  outline: none;
+}
+
+.App .settings .sidebar {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.App .settings .sidebar .sidebar_title {
+  text-align: center;
+  padding: 5px 0px;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+}
+
+.App .settings .sidebar .sidebar_img {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .settings .sidebar .sidebar_img img {
+  width: 80%;
+}
+
+.App .settings .sidebar .sidebar_text {
+  padding: 10px 0px;
+}
+
+.App .settings .sidebar .sidebar_categories {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.App .settings .sidebar .sidebar_categories div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .settings .sidebar .sidebar_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px;
+}
+
+.App .settings .sidebar .sidebar_social .fab {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.App .settings .sidebar .sidebar_social .fa-facebook-square {
+  color: #4267b2;
+}
+
+.App .settings .sidebar .sidebar_social .fa-instagram-square {
+  color: #cd486b;
+}
+
+.App .settings .sidebar .sidebar_social .fa-twitter-square {
+  color: #00acee;
+}
+
+.App .settings .sidebar .sidebar_social .fa-pinterest-square {
+  color: #c8232c;
 }
 /*# sourceMappingURL=App.css.map */

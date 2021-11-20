@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
 
   return (
     <div className="navbar">
@@ -34,14 +34,16 @@ const Navbar = () => {
             WRITE
           </Link>
         </span>
-        {user ? <span>LOGOUT</span> : ""}
+        {user ? <span onClick={() => setUser(false)}>LOGOUT</span> : ""}
       </div>
       <div className="nav_right">
         {user ? (
-          <img
-            src="https://www.freeiconspng.com/uploads/person-icon-8.png"
-            alt="person_img"
-          />
+          <Link to="/settings">
+            <img
+              src="https://www.freeiconspng.com/uploads/person-icon-8.png"
+              alt="person_img"
+            />
+          </Link>
         ) : (
           <div className="nav_login_logout">
             <span>

@@ -22,7 +22,7 @@
         cursor: pointer;
       }
       .fa-facebook-square {
-        color: #4267B2;
+        color: #4267b2;
       }
       .fa-instagram-square {
         color: #cd486b;
@@ -192,7 +192,7 @@
             font-size: 22px;
           }
           .fa-facebook-square {
-            color: #4267B2;
+            color: #4267b2;
           }
           .fa-instagram-square {
             color: #cd486b;
@@ -289,7 +289,7 @@
           font-size: 22px;
         }
         .fa-facebook-square {
-          color: #4267B2;
+          color: #4267b2;
         }
         .fa-instagram-square {
           color: #cd486b;
@@ -440,6 +440,116 @@
               background-color: rgb(33, 167, 167);
             }
           }
+        }
+      }
+    }
+  }
+  .settings {
+    display: flex;
+    margin-top: 60px;
+    padding: 0px 20px;
+    .settings_content {
+      flex: 9;
+      .settings_title {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px 10px 0px;
+        color: tomato;
+        span {
+          cursor: pointer;
+        }
+      }
+      .settings_form {
+        .profile_picture_title {
+          h3 {
+            font-weight: 200;
+          }
+        }
+        .settings_image {
+          display: flex;
+          align-items: center;
+          padding: 10px 0px;
+
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            margin-right: 20px;
+          }
+          label {
+            i {
+              font-size: 25px;
+              background-color: crimson;
+              padding: 5px;
+              border-radius: 50%;
+              color: white;
+            }
+          }
+        }
+        .settings_input {
+          display: flex;
+          flex-direction: column;
+          margin: 20px 0px;
+          padding: 0px 20px 0px 0px;
+          input {
+            font-size: 18px;
+            padding: 20px 0px 3px 0px;
+            border: none;
+            border-bottom: 1px solid gray;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+    .sidebar {
+      flex: 3;
+      .sidebar_title {
+        text-align: center;
+        padding: 5px 0px;
+        border-top: 2px solid lightgray;
+        border-bottom: 2px solid lightgray;
+      }
+      .sidebar_img {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 80%;
+        }
+      }
+      .sidebar_text {
+        padding: 10px 0px;
+      }
+      .sidebar_categories {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .sidebar_social {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        .fab {
+          margin-right: 10px;
+          font-size: 22px;
+        }
+        .fa-facebook-square {
+          color: #4267b2;
+        }
+        .fa-instagram-square {
+          color: #cd486b;
+        }
+        .fa-twitter-square {
+          color: #00acee;
+        }
+        .fa-pinterest-square {
+          color: #c8232c;
         }
       }
     }
