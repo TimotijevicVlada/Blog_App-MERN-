@@ -8,7 +8,7 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true   //This trow some error in the terminal
+   // useCreateIndex: true   //This trow some error in the terminal
 }).then(console.log("Conntected to MongoDB")).catch(err => console.log(err));
 
 app.use("/", (req, res) => {
