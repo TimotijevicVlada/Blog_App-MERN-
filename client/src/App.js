@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/single" element={<Single />} />
+          <Route path="/post/:postId" element={<Single />} />
           <Route path="/write" element={<Write />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/register" element={<Register />}/>

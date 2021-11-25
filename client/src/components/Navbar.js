@@ -8,10 +8,10 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav_social">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-pinterest-square"></i>
+        <i className="fab fa-facebook-square"></i>
+        <i className="fab fa-instagram-square"></i>
+        <i className="fab fa-twitter-square"></i>
+        <i className="fab fa-pinterest-square"></i>
       </div>
       <div className="nav_center">
         <span>
@@ -59,7 +59,7 @@ const Navbar = () => {
             </span>
           </div>
         )}
-        <i class="fas fa-search"></i>
+        <i className="fas fa-search"></i>
       </div>
     </div>
   );

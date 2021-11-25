@@ -7,7 +7,7 @@ const Sidebar = () => {
         <h3>ABOUT ME</h3>
       </div>
       <div className="sidebar_img">
-        <img src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png" alt="person_image" />
+        <img src="" alt="person_image" />
       </div>
       <div className="sidebar_text"> 
         <p>
@@ -38,10 +38,10 @@ const Sidebar = () => {
           </h3>
       </div>
       <div className="sidebar_social">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-pinterest-square"></i>
+            <i className="fab fa-facebook-square"></i>
+            <i className="fab fa-instagram-square"></i>
+            <i className="fab fa-twitter-square"></i>
+            <i className="fab fa-pinterest-square"></i>
       </div>
     </div>
   );

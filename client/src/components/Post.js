@@ -1,11 +1,11 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 
-const Post = () => {
+const Post = ({post}) => {
   return (
     <div className="post">
       <div className="post_img">
-        <Link to="/single">
+        <Link to={`/post/${post._id}`}>
           <img
           src="https://travelwithkat.com/wp-content/uploads/2017/08/oak-alley-plantation.jpg"
           alt="post_image"
@@ -13,21 +13,19 @@ const Post = () => {
         </Link>
       </div>
       <div className="post_header">
-        <span>Music</span>
-        <span>Cinema</span>
+        {post.categories.map(item => (
+            <span>{item.name}</span>
+        ))}
       </div>
       <div className="post_title">
-        <h3>Lorem ipsum dolor sit amet</h3>
+        <h3>{post.title}</h3>
       </div>
       <div className="post_time">
-        <span>1 hour ago</span>
+        <span>{new Date(post.createdAt).toDateString()}</span>
       </div>
       <div className="post_text">
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, id
-          vitae cupiditate dolorem pariatur ducimus quasi quae praesentium eos,
-          vero aliquam nisi, quaerat aspernatur labore perspiciatis dolor saepe
-          facere ad.
+          {post.desc}
         </p>
       </div>
     </div>
