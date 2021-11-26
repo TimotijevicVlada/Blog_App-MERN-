@@ -112,12 +112,15 @@
         margin: 20px;
         .post {
           width: 300px;
+          height: 370px;
           margin: 0px 25px 40px 25px;
+          background-color: whitesmoke;
+          border-radius: 12px 12px;
           .post_img {
             overflow: hidden;
             width: 100%;
             height: 50%;
-            border-radius: 7px;
+            border-radius: 12px 12px 0px 0px;
             img {
               width: 100%;
               transition: all 0.4s ease;
@@ -137,6 +140,7 @@
           .post_title {
             text-align: center;
             margin: 5px 0px;
+            padding: 0px 10px;
           }
           .post_time {
             text-align: center;
@@ -145,6 +149,7 @@
             font-size: 12px;
           }
           .post_text {
+            padding: 12px;
             p {
               overflow: hidden;
               text-overflow: ellipsis;
@@ -169,6 +174,7 @@
           justify-content: center;
           img {
             width: 80%;
+            border-radius: 12px;
           }
         }
         .sidebar_text {
@@ -178,10 +184,6 @@
           padding: 10px 0px;
           display: flex;
           justify-content: space-evenly;
-          div {
-            display: flex;
-            flex-direction: column;
-          }
         }
         .sidebar_social {
           display: flex;
@@ -214,9 +216,11 @@
       padding: 20px;
       .single_post_image {
         height: 400px;
-        margin-top: 30px;
+        margin-top: 40px;
         border-radius: 15px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
         img {
           width: 100%;
         }
@@ -246,6 +250,10 @@
         justify-content: space-between;
         color: rgb(206, 175, 1);
         margin: 10px 0px;
+        .link {
+          text-decoration: none;
+          color: inherit;
+        }
       }
       .single_post_text {
         margin: 10px 0px;
@@ -261,11 +269,12 @@
         border-bottom: 2px solid lightgray;
       }
       .sidebar_img {
-        padding: 10px 0px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         img {
-          width: 80%;
+          width: 70%;
+          border-radius: 12px;
         }
       }
       .sidebar_text {
@@ -531,6 +540,7 @@
         justify-content: center;
         img {
           width: 80%;
+          border-radius: 12px;
         }
       }
       .sidebar_text {

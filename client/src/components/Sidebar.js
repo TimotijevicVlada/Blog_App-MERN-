@@ -1,13 +1,27 @@
-import React from "react";
+import axios from "axios";
+import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
+
+  const [cats, setCats] = useState([]);
+
+  const fetchCat = async () => {
+    const response = await axios.get("/categories");
+    setCats(response.data);
+  }
+
+  useEffect(() => {
+    fetchCat();
+  }, [])
+
   return (
     <div className="sidebar">
       <div className="sidebar_title">
         <h3>ABOUT ME</h3>
       </div>
       <div className="sidebar_img">
-        <img src="" alt="person_image" />
+        <img src="https://restorixhealth.com/wp-content/uploads/2018/08/No-Image.png" alt="person_image" />
       </div>
       <div className="sidebar_text"> 
         <p>
@@ -21,16 +35,16 @@ const Sidebar = () => {
             <h3>CATEGORIES</h3>
       </div>
       <div className="sidebar_categories">
-            <div>
-                <span>Life</span>
-                <span>Style</span>
-                <span>Tech</span>
-            </div>
-            <div>
-                <span>Music</span>
-                <span>Sport</span>
-                <span>Cinema</span>
-            </div>
+          
+          {
+            cats.map(item => (
+            <Link to={`/?cat=${item.name}`}>
+              <span>{item.name}</span>
+            </Link>
+              ))
+          }
+          
+          
       </div>
       <div className="sidebar_title">
           <h3>
