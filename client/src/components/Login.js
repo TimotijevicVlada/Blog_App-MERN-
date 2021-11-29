@@ -21,8 +21,7 @@ const Login = () => {
     }
   };
 
-  console.log(user)
-
+  
   return (
     <div className="login">
       <form onSubmit={handleSubmit} className="login_form">

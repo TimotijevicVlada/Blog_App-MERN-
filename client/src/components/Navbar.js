@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../context/Context";
 
 const Navbar = () => {
 
-  const [user, setUser] = useState(true);
+  
+
+  const {user, dispatch} = useContext(Context);
 
   return (
     <div className="navbar">
@@ -34,7 +37,7 @@ const Navbar = () => {
             WRITE
           </Link>
         </span>
-        {user ? <span onClick={() => setUser(false)}>LOGOUT</span> : ""}
+        {user ? <span>LOGOUT</span> : ""}
       </div>
       <div className="nav_right">
         {user ? (
