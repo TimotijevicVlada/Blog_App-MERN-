@@ -8,6 +8,9 @@ const SignlePost = () => {
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState([]);
 
+  //Public folder
+  const PF = "http://localhost:5000/images/";
+
   const getPost = useCallback(async () => {
     const response = await axios.get("/posts/" + path);
     setPost(response.data);
@@ -20,14 +23,7 @@ const SignlePost = () => {
   return (
     <div className="single_post">
       <div className="single_post_image">
-        {post.photo ? (
-          <img src={post.photo} alt="nature_img" />
-        ) : (
-          <img
-            src="https://lh3.googleusercontent.com/proxy/ixWOzv8ulLDs799HHt0Xjyqyy_LaJ0WkSuTSJ9oafP-jfde0fDlwJQHnR_PHDryMWMRUs1VnW19OoVoVq8QWjPgLW5Af6cyxGpBT2sA"
-            alt="no_image_found"
-          />
-        )}
+        {post.photo && <img src={PF + post.photo} alt="" />}
       </div>
       <div className="single_post_events">
         <i className="far fa-edit"></i>

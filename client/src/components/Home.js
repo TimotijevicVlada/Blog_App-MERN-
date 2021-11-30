@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Posts from "./Posts";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
@@ -9,14 +9,14 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
   const {search} = useLocation();
 
-  const fetchPosts = async () => {
+  const fetchPosts = useCallback( async () => {
     const response = await axios.get("/posts" + search);
     setPosts(response.data);
-  };
+  }, [search]);
 
   useEffect(() => {
     fetchPosts();
-  }, [search]);
+  }, [fetchPosts]);
 
   return (
     <div className="home">

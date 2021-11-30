@@ -62,6 +62,10 @@
   cursor: pointer;
 }
 
+.App .navbar .nav_center span:hover {
+  text-decoration: underline;
+}
+
 .App .navbar .nav_center span .link {
   text-decoration: none;
   color: gray;
@@ -80,9 +84,10 @@
           align-items: center;
 }
 
-.App .navbar .nav_right img {
-  width: 40px;
+.App .navbar .nav_right .nav_img img {
+  width: 45px;
   margin-right: 12px;
+  border-radius: 50%;
 }
 
 .App .navbar .nav_right .fas {

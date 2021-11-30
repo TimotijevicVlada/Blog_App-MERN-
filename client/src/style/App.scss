@@ -40,6 +40,9 @@
         margin-right: 12px;
         color: gray;
         cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
         .link {
           text-decoration: none;
           color: gray;
@@ -52,9 +55,12 @@
     .nav_right {
       display: flex;
       align-items: center;
-      img {
-        width: 40px;
-        margin-right: 12px;
+      .nav_img {
+         img {
+          width: 45px;
+          margin-right: 12px;
+          border-radius: 50%;
+        }
       }
       .fas {
         margin-left: 10px;
@@ -449,7 +455,6 @@
               background-color: rgb(33, 167, 167);
             }
           }
-          
         }
       }
     }

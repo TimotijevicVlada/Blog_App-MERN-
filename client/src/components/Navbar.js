@@ -4,9 +4,11 @@ import { Context } from "../context/Context";
 
 const Navbar = () => {
 
-  
-
   const {user, dispatch} = useContext(Context);
+
+  const handleLogout = () => {
+    dispatch({type: "LOGOUT"});
+  }
 
   return (
     <div className="navbar">
@@ -37,13 +39,13 @@ const Navbar = () => {
             WRITE
           </Link>
         </span>
-        {user ? <span>LOGOUT</span> : ""}
+        {user ? <span onClick={handleLogout}>LOGOUT</span> : ""}
       </div>
       <div className="nav_right">
         {user ? (
-          <Link to="/settings">
+          <Link to="/settings" className="nav_img">
             <img
-              src="https://www.freeiconspng.com/uploads/person-icon-8.png"
+              src={user.profilePic}
               alt="person_img"
             />
           </Link>
