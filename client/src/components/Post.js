@@ -22,6 +22,7 @@ const Post = ({post}) => {
         <h3>{post.title}</h3>
       </div>
       <div className="post_time">
+        <div>Author: <span className="author_name">{post.username}</span></div>
         <span>{new Date(post.createdAt).toDateString()}</span>
       </div>
       <div className="post_text">

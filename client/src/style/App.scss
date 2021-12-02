@@ -84,35 +84,29 @@
     }
   }
   .home {
-    margin-top: 20px;
+    margin-top: 15vh;
     .header {
-      margin-top: 70px;
+      height: 85vh;
       .header_titles {
-        position: absolute;
-        top: 10%;
         width: 100%;
+        height: 20%;
         display: flex;
-        flex-direction: column;
-        text-align: center;
-        .title_small {
-          font-size: 20px;
-          color: lightgray;
-        }
-        .title_big {
-          font-size: 70px;
+        justify-content: center;
+        align-items: flex-start;
+        img {
+          width: 270px;
+          height: 90%;
+          z-index: 1;
         }
       }
       img {
         width: 100%;
-        height: 600px;
-        margin-top: 80px;
+        height: 80%;
         object-fit: cover;
       }
     }
     .home_content {
-      display: flex;
       .posts {
-        flex: 9;
         display: flex;
         flex-wrap: wrap;
         margin: 20px;
@@ -149,10 +143,19 @@
             padding: 0px 10px;
           }
           .post_time {
+            display: flex;
+            justify-content: space-between;
             text-align: center;
             font-style: italic;
             color: gray;
             font-size: 12px;
+            padding: 0px 10px;
+            div {
+              .author_name {
+                color: black;
+                font-weight: bold;
+              }
+            }
           }
           .post_text {
             padding: 12px;
@@ -166,60 +169,14 @@
           }
         }
       }
-      .sidebar {
-        flex: 3;
-        .sidebar_title {
-          text-align: center;
-          padding: 5px 0px;
-          border-top: 2px solid lightgray;
-          border-bottom: 2px solid lightgray;
-        }
-        .sidebar_img {
-          padding: 10px 0px;
-          display: flex;
-          justify-content: center;
-          img {
-            width: 80%;
-            border-radius: 12px;
-          }
-        }
-        .sidebar_text {
-          padding: 10px 0px;
-        }
-        .sidebar_categories {
-          padding: 10px 0px;
-          display: flex;
-          justify-content: space-evenly;
-        }
-        .sidebar_social {
-          display: flex;
-          justify-content: center;
-          padding: 10px 0px;
-          .fab {
-            margin-right: 10px;
-            font-size: 22px;
-          }
-          .fa-facebook-square {
-            color: #4267b2;
-          }
-          .fa-instagram-square {
-            color: #cd486b;
-          }
-          .fa-twitter-square {
-            color: #00acee;
-          }
-          .fa-pinterest-square {
-            color: #c8232c;
-          }
-        }
-      }
     }
   }
   .single {
     display: flex;
+    justify-content: center;
+    margin-top: 25px;
     .single_post {
-      flex: 9;
-      padding: 20px;
+      width: 60%;
       .single_post_image {
         height: 400px;
         margin-top: 40px;
@@ -266,61 +223,11 @@
         text-indent: 20px;
       }
     }
-    .sidebar {
-      flex: 3;
-      .sidebar_title {
-        text-align: center;
-        padding: 5px 0px;
-        border-top: 2px solid lightgray;
-        border-bottom: 2px solid lightgray;
-      }
-      .sidebar_img {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        img {
-          width: 70%;
-          border-radius: 12px;
-        }
-      }
-      .sidebar_text {
-        padding: 10px 0px;
-      }
-      .sidebar_categories {
-        padding: 10px 0px;
-        display: flex;
-        justify-content: space-evenly;
-        div {
-          display: flex;
-          flex-direction: column;
-        }
-      }
-      .sidebar_social {
-        display: flex;
-        justify-content: center;
-        padding: 10px 0px;
-        .fab {
-          margin-right: 10px;
-          font-size: 22px;
-        }
-        .fa-facebook-square {
-          color: #4267b2;
-        }
-        .fa-instagram-square {
-          color: #cd486b;
-        }
-        .fa-twitter-square {
-          color: #00acee;
-        }
-        .fa-pinterest-square {
-          color: #c8232c;
-        }
-      }
-    }
   }
   .write {
     display: flex;
     justify-content: center;
+    margin-top: 25px;
     .write_content {
       width: 70%;
       .write_image {
@@ -329,6 +236,8 @@
         height: 400px;
         border-radius: 15px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
         img {
           width: 100%;
         }
@@ -341,6 +250,13 @@
             color: gray;
             padding: 10px 0px;
             display: flex;
+            label {
+              width: 20%;
+              .fa-image {
+                font-size: 50px;
+                cursor: pointer;
+              }
+            }
             span {
               display: flex;
               justify-content: center;
@@ -357,9 +273,11 @@
               }
             }
             input {
-              width: 100%;
+              width: 80%;
               border: none;
               font-size: 22px;
+              text-align: center;
+              border-bottom: 2px solid lightgray;
               &:focus {
                 outline: none;
               }
@@ -370,9 +288,10 @@
               width: 100%;
               height: 300px;
               border: none;
+              border-bottom: 2px solid lightgray;
               font-family: "Poppins", sans-serif;
               font-size: 18px;
-              padding: 10px 0px;
+              padding: 20px;
               &:focus {
                 outline: none;
               }
@@ -461,10 +380,10 @@
   }
   .settings {
     display: flex;
+    justify-content: center;
     margin-top: 60px;
-    padding: 0px 20px;
     .settings_content {
-      flex: 9;
+      width: 50%;
       .settings_title {
         display: flex;
         justify-content: space-between;
@@ -519,7 +438,8 @@
         .settings_submit {
           padding-right: 20px;
           display: flex;
-          justify-content: flex-end;
+          flex-direction: column;
+          align-items: flex-end;
           button {
             background-color: teal;
             color: white;
@@ -528,6 +448,12 @@
             border-radius: 7px;
             border: none;
             cursor: pointer;
+          }
+          .profile_updated {
+            color: green;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
           }
         }
       }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Posts from "./Posts";
-import Sidebar from "./Sidebar";
 import Header from "./Header";
 import axios from "axios";
 import { useLocation } from "react-router";
@@ -23,7 +22,6 @@ const Home = () => {
       <Header />
       <div className="home_content">
         <Posts posts={posts}/>
-        <Sidebar />
       </div>
     </div>
   );

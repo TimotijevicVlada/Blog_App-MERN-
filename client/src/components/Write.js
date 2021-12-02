@@ -40,14 +40,25 @@ const Write = () => {
     <div className="write">
       <div className="write_content">
         <div className="write_image">
-          {file && <img src={URL.createObjectURL(file)} alt="" />}
+          {!file ? (
+            <img
+              src="https://www.capernaum.rs/wp-content/themes/consultix/images/no-image-found-360x260.png"
+              alt=""
+            />
+          ) : (
+            file && <img src={URL.createObjectURL(file)} alt="" />
+          )}
         </div>
         <form onSubmit={handleSubmit}>
           <div className="write_events">
             <div className="write_content_title">
+              <label htmlFor="fileInput">
+                <i className="settingsPPIcon far fa-image"></i>{" "}
+              </label>
               <input
                 type="file"
                 id="fileInput"
+                style={{ display: "none" }}
                 onChange={(e) => setFile(e.target.files[0])}
               />
               <input

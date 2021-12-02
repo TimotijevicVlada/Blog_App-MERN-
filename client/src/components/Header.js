@@ -4,10 +4,9 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header_titles">
-                <span className="title_small">React & Node</span>
-                <span className="title_big">Blog</span>
+                <img src="https://camo.githubusercontent.com/85cf7e1a8b85221e81ba91cbce29c917b91a7390bb3ca06aa31cfd1eadd7fe60/68747470733a2f2f7777772e337269746563686e6f6c6f676965732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031392f31312f4d45524e2d537461636b2d547261696e696e672d696e2d50756e652d65313537353032323432373234342e706e67" alt="" />
             </div>
-            <img src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="header_img" />
+            <img src="https://www.kudaveceras.rs/images/kcfinder/image/Blog/2021/najbolji-bloh-u-srbiji-02.jpg" alt="header_img" />
         </div>
     )
 }
