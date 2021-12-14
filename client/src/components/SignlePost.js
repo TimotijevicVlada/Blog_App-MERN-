@@ -65,6 +65,7 @@ const SignlePost = () => {
       )}
       {updateMode ? (
         <input
+          className="title_update"
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -83,7 +84,7 @@ const SignlePost = () => {
       </div>
       <div className="single_post_text">
         {updateMode ? (
-          <textarea value={desc} onChange={(e) => setDesc(e.target.value)} />
+          <textarea className="desc_update" value={desc} onChange={(e) => setDesc(e.target.value)} />
         ) : (
           <p>{desc}</p>
         )}

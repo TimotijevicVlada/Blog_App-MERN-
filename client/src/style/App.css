@@ -284,6 +284,19 @@
   color: tomato;
 }
 
+.App .single .single_post .title_update {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0px;
+  font-size: 20px;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.App .single .single_post .title_update:focus {
+  outline: none;
+}
+
 .App .single .single_post .single_post_title {
   text-align: center;
 }
@@ -306,7 +319,39 @@
 
 .App .single .single_post .single_post_text {
   margin: 10px 0px;
-  text-indent: 20px;
+}
+
+.App .single .single_post .single_post_text .desc_update {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins";
+  background-color: whitesmoke;
+  min-height: 100px;
+  border: none;
+}
+
+.App .single .single_post .single_post_text .desc_update:focus {
+  outline: none;
+}
+
+.App .single .single_post .update_post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.App .single .single_post .update_post button {
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
 }
 
 .App .write {
